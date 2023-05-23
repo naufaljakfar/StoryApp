@@ -23,14 +23,15 @@ class SignInActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivitySignInBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
-        editTextEmail = findViewById(R.id.editTextEmail)
-        editTextPassword = findViewById(R.id.editTextPassword)
-        buttonSignIn = findViewById(R.id.buttonSignIn)
-        buttonSignUp = findViewById(R.id.TextSignUp)
+//        editTextEmail = findViewById(R.id.editTextEmail)
+//        editTextPassword = findViewById(R.id.editTextPassword)
+//        buttonSignIn = findViewById(R.id.buttonSignIn)
+//        buttonSignUp = findViewById(R.id.TextSignUp)
 
         binding.TextSignUp.setOnClickListener {
             val intent = Intent(this@SignInActivity, RegisterActivity::class.java)
